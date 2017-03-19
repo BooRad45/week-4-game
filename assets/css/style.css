@@ -4,6 +4,10 @@ body {
     	text-align: center;
     	color: grey;	
  }
+ .col-md-2 {
+ 	margin-right: -32px;
+ 	margin-top: 70px;
+ }
  .caption h3 {
  	font-size: 12px;
  	width: 100%;
@@ -23,5 +27,8 @@ body {
  	border: solid 5px green;
  }
  .thumbnail>img {
- 	margin-bottom: -90px;
+ 	margin-bottom: -72%;
+ }
+ #obiWan {
+ 	margin-left: -50%px;
  }
