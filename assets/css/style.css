@@ -4,3 +4,23 @@ body {
     	text-align: center;
     	color: grey;	
  }
+ .caption h3 {
+ 	font-size: 12px;
+ 	width: 100%;
+    position: relative;
+    top: -65px;
+    text-align: center;	
+ }
+ .caption p {
+  width: 100%;
+  position: relative;
+  top: 36px;
+  text-align: center;	
+ }
+ .thumbnail {
+ 	position: relative;
+ 	padding: 15px;
+ }
+ .thumbnail>img {
+ 	margin-bottom: -90px;
+ }
