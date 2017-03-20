@@ -15,12 +15,14 @@ $(document).ready(function(){
 
     $("#darthSidious").click(function(){
         $("#obiWan, #lukeSkywalker, #darthMaul").hide();
+        $("#darthSidious").animate({"right":"170px"}, "slow");
     
 });
     
 
     $("#darthMaul").click(function(){
         $("#obiWan, #darthSidious, #lukeSkywalker").hide();
+        $("#darthMaul").animate({"right":"320px"}, "slow");
  
 
   });
