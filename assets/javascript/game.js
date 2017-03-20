@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
    $("#obiWan").click(function(){
-        $("#lukeSkywalker").hide();
+        $("#lukeSkywalker, #darthSidious, #darthMaul").hide();
         console.log("hello");
     });   
 });
