@@ -41,8 +41,16 @@ body {
  #obiWan {
  	margin-left: -50%px;
  }
- #characters {
+ #availableCharacters {
 	margin-left: 0px;
 	margin-bottom: 0px;
+ }
+ #enemiesAvailable {
+ 	margin-left: 0px;
+ 	visibility: hidden;
+ }
+ #defenders {
+ 	margin-left: 0px;
+ 	visibility: hidden;
  }
  
