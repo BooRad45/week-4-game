@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
-   // jQuery methods go here...
-
+   $("#obiWan").click(function(){
+        $("#lukeSkywalker").hide();
+        console.log("hello");
+    });   
 });
