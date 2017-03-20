@@ -7,6 +7,12 @@ body {
  h1 {
  	color: black;
  }
+ h2 {
+ 	padding-left: 0px;
+ 	margin-top: -10px;
+ 	text-align: left;
+ 	color: black;
+ }
  .col-md-2 {
  	margin-right: -32px;
  	margin-top: 70px;
@@ -37,5 +43,6 @@ body {
  }
  #characters {
 	margin-left: 0px;
+	margin-bottom: 0px;
  }
  
