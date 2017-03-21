@@ -32,7 +32,9 @@ $(document).ready(function(){
         $("#darthSidiousEnemy").css({"visibility": "hidden"});//hide main character in enemy section
         $("#enemiesAvailable").css({ "visibility": "visible"});//make unpicked characters visible in enemy section
         $("#obiWanEnemy, #lukeSkywalkerEnemy, #darthMaulEnemy").css({"border":"red 10px solid"}); //place red border around enemy characters     
-       
+        $("#darthMaulEnemy").animate({"right":"175px"}, "slow");
+        $("#lukeSkywalkerEnemy").animate({"right":"6px"}, "slow");
+        $("#darthSidious").animate({"right":"166px"}, "slow");
    }); // close of Darth Sidious main character functions
           
       
@@ -41,6 +43,9 @@ $(document).ready(function(){
         $("#darthMaulEnemy").css({"visibility": "hidden"});//hide main character in enemy section
         $("#enemiesAvailable").css({ "visibility": "visible"});//make unpicked characters visible in enemy section
         $("#obiWanEnemy, #lukeSkywalkerEnemy, #darthSidiousEnemy").css({"border":"red 10px solid"}); //place red border around enemy characters     
+        $("#lukeSkywalkerEnemy").animate({"right":"4px"}, "slow");
+        $("#darthSidiousEnemy").animate({"right":"7px"}, "slow");
+        $("#darthMaul").animate({"right":"321px"}, "slow");
    }); // close of Darth Maul main character functions
 
 
