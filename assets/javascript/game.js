@@ -94,24 +94,35 @@ $(document).ready(function(){
         $("#darthSidiousEnemy").css({"display": "none"});//hide main character in enemy section
         $("#darthSidiousDef").css({ "visibility": "visible", "border": "black 10px solid"});//make ObiWan visible in defender section
         // $("#darthSidiousEnemy").animate({"right":"200%"}, "slow"); 
-        if ($("#lukeSkywalkerEnemy").css("display") == "none") { 
+        if ($("#lukeSkywalkerEnemy").css("display") == "none") {   //conditional to test if Luke has been chosen as YourCharacter
             $("#darthMaulEnemy").animate({"right":"197%"}, "slow");
+         } //close of conditional
+    
+  }); //close of Darth Sidious enemy functions
 
-        // $("#lukeSkywalkerEnemy").animate({"right":"95%"}, "slow");
-    } //close of Darth Sidious enemy functions
-  });
+    // Darth Sidious YourCharacter ObiWan Defender
+    $("#obiWanEnemy").click(function(){
+        $("#obiWanEnemy").css({"display": "none"});//hide main character in enemy section
+        $("#obiWanDef").css({ "visibility": "visible", "border": "black 10px solid"});//make ObiWan visible in defender section
+        if ($("#darthSidiousEnemy").css("visibility") == "hidden") {   //conditional to test if D. Sidious has been chosen as YourCharacter
+            $("#darthMaulEnemy").animate({"right":"197%"}, "slow");
+            $("#lukeSkywalkerEnemy").animate({"right":"100%"}, "slow");
 
+        } //close of conditional
+    
+  }); //close of ObiWan enemy functions
 
-
-
-
-
-
-
-
-
-        
+   // Darth Sidious YourCharacter Luke Defender
+    $("#lukeSkywalkerEnemy").click(function(){
+        $("#lukeSkywalkerEnemy").css({"display": "none"});//hide main character in enemy section
+        $("#lukeSkywalkerDef").css({ "visibility": "visible", "border": "black 10px solid"});//make ObiWan visible in defender section
+        if ($("#darthSidiousEnemy").css("visibility") == "hidden") {   //conditional to test if D. Sidious has been chosen as YourCharacter
+            $("#darthMaulEnemy").animate({"right":"195%"}, "slow");
+        }         
  
 
+    }); //close of Luke enemy functions
+
   }); //document.ready function close
+
 
