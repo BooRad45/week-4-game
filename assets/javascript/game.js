@@ -49,16 +49,24 @@ $(document).ready(function(){
     ////////////////////////////////////////////////////////////////////////////////////////
     // ENEMIES AVAILABLE TO ATTACK functions (set up all scenarios when defender is chosen)
     ////////////////////////////////////////////////////////////////////////////////////////
-
+      //ObiWan YourCharacter and LukeSkywalker Defender
     $("#lukeSkywalkerEnemy").click(function(){
         $("#lukeSkywalkerEnemy").css({"display": "none"});//hide main character in enemy section
         $("#lukeSkywalkerDef").css({ "visibility": "visible", "border": "black 10px solid"});//make Luke visible in defender section
         $("#lukeSkywalkerDef").animate({"right":"95%"}, "slow"); // align Luke left
         $("#darthSidiousEnemy").animate({"right":"91%"}, "slow");
         $("#darthMaulEnemy").animate({"right":"91%"}, "slow");
-
-
     }); //close of Luke Skywalker enemy functions
+
+    //ObiWan YourCharacter and Darth Sidious Defender
+    $("#darthSidiousEnemy").click(function(){
+        $("#darthSidiousEnemy").css({"display": "none"});//hide main character in enemy section
+        $("#darthSidiousDef").css({ "visibility": "visible", "border": "black 10px solid"});//make Luke visible in defender section
+        $("#darthSidiousDef").animate({"right":"195%"}, "slow"); // align Darth Sidious left
+        // $("#lukeSkywalkerEnemy").animate({"right":"10%"}, "slow");
+        $("#darthMaulEnemy").animate({"right":"95%"}, "slow");
+    }); //close of Luke Skywalker enemy functions
+
 
 
 
