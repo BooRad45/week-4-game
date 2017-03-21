@@ -18,9 +18,11 @@ $(document).ready(function(){
    //!! Need function to slide enemy characters together and float left
    $("#lukeSkywalker").click(function(){ // Luke Skywalker event listener
         $("#obiWan, #darthSidious, #darthMaul").hide(); //hide unpicked main characters 
-        $("#lukeSkywalkerEnemy").css({"visibility": "hidden"});//hide main character in enemy section
+        $("#lukeSkywalkerEnemy").css({"display": "none"});//hide main character in enemy section
         $("#enemiesAvailable").css({ "visibility": "visible"});//make unpicked characters visible in enemy section
         $("#obiWanEnemy, #darthSidiousEnemy, #darthMaulEnemy").css({"border":"red 10px solid"}); //place red border around enemy characters     
+        $("#darthSidiousEnemy").animate({"right":"170px"}, "slow");
+        $("#darthMaulEnemy").animate({"right":"175px"}, "slow");
    }); // close of Luke Skywalker main character functions
      
    // CHARACTER #3 = DARTH SIDIOUS --- main character functions
@@ -30,8 +32,9 @@ $(document).ready(function(){
         $("#darthSidiousEnemy").css({"visibility": "hidden"});//hide main character in enemy section
         $("#enemiesAvailable").css({ "visibility": "visible"});//make unpicked characters visible in enemy section
         $("#obiWanEnemy, #lukeSkywalkerEnemy, #darthMaulEnemy").css({"border":"red 10px solid"}); //place red border around enemy characters     
+       
    }); // close of Darth Sidious main character functions
-          // $("#darthSidious").animate({"right":"170px"}, "slow");
+          
       
     $("#darthMaul").click(function(){
         $("#obiWan, #darthSidious, #lukeSkywalker").hide();
@@ -44,7 +47,7 @@ $(document).ready(function(){
 
 
 
-        // $("#darthMaul").animate({"right":"320px"}, "slow");
+        
  
 
   }); //document.ready function close
