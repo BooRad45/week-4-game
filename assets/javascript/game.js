@@ -46,9 +46,19 @@ $(document).ready(function(){
         $("#darthMaul").animate({"right":"321px"}, "slow");
    }); // close of Darth Maul main character functions
 
-    ///////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////
     // ENEMIES AVAILABLE TO ATTACK functions (set up all scenarios when defender is chosen)
-    $("")
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    $("#lukeSkywalkerEnemy").click(function(){
+        $("#lukeSkywalkerEnemy").css({"display": "none"});//hide main character in enemy section
+        $("#lukeSkywalkerDef").css({ "visibility": "visible", "border": "black 10px solid"});//make Luke visible in defender section
+        $("#lukeSkywalkerDef").animate({"right":"95%"}, "slow"); // align Luke left
+        $("#darthSidiousEnemy").animate({"right":"91%"}, "slow");
+        $("#darthMaulEnemy").animate({"right":"91%"}, "slow");
+
+
+    }); //close of Luke Skywalker enemy functions
 
 
 
