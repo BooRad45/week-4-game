@@ -21,6 +21,10 @@ $(document).ready(function(){
         $("#obiWanEnemy, #darthSidiousEnemy, #darthMaulEnemy").css({"border":"red 10px solid"}); //place red border around enemy characters     
         $("#darthSidiousEnemy").animate({"right":"170px"}, "slow");
         $("#darthMaulEnemy").animate({"right":"175px"}, "slow");
+        $('#lukeSkywalker').on('click change', function() {
+        $(this).data('clicked', true);
+});
+
    }); // close of Luke Skywalker main character functions
      
    // CHARACTER #3 = DARTH SIDIOUS --- main character functions
@@ -61,11 +65,45 @@ $(document).ready(function(){
     //ObiWan YourCharacter and Darth Sidious Defender
     $("#darthSidiousEnemy").click(function(){
         $("#darthSidiousEnemy").css({"display": "none"});//hide main character in enemy section
-        $("#darthSidiousDef").css({ "visibility": "visible", "border": "black 10px solid"});//make Luke visible in defender section
+        $("#darthSidiousDef").css({ "visibility": "visible", "border": "black 10px solid"});//make D. Sidious visible in defender section
         $("#darthSidiousDef").animate({"right":"195%"}, "slow"); // align Darth Sidious left
         // $("#lukeSkywalkerEnemy").animate({"right":"10%"}, "slow");
         $("#darthMaulEnemy").animate({"right":"95%"}, "slow");
-    }); //close of Luke Skywalker enemy functions
+    }); //close of Darth Sidious enemy functions
+
+    //ObiWan YourCharacter and Darth Maul Defender
+    $("#darthMaulEnemy").click(function(){
+        $("#darthMaulEnemy").css({"display": "none"});//hide main character in enemy section
+        $("#darthMaulDef").css({ "visibility": "visible", "border": "black 10px solid"});//make Darth Maul visible in defender section
+        $("#darthMaulDef").animate({"right":"292%"}, "slow"); // align Darth Sidious left
+        // $("#lukeSkywalkerEnemy").animate({"right":"10%"}, "slow");
+        // $("#lukeSkywalkerEnemy").animate({"right":"95%"}, "slow");
+    }); //close of Darth Maul enemy functions
+
+    //Luke Skywalker YourCharacter and Obi-Wan Defender
+    $("#obiWanEnemy").click(function(){
+        $("#obiWanEnemy").css({"display": "none"});//hide main character in enemy section
+        $("#obiWanDef").css({ "visibility": "visible", "border": "black 10px solid"});//make ObiWan visible in defender section
+        $("#darthSidiousEnemy").animate({"right":"200%"}, "slow"); 
+        $("#darthMaulEnemy").animate({"right":"200%"}, "slow");
+        // $("#lukeSkywalkerEnemy").animate({"right":"95%"}, "slow");
+    }); //close of ObiWan enemy functions
+
+    //Luke Skywalker YourCharacter and Darth Sidious Defender
+    $("#darthSidiousEnemy").click(function(){
+        $("#darthSidiousEnemy").css({"display": "none"});//hide main character in enemy section
+        $("#darthSidiousDef").css({ "visibility": "visible", "border": "black 10px solid"});//make ObiWan visible in defender section
+        // $("#darthSidiousEnemy").animate({"right":"200%"}, "slow"); 
+        if ($("#lukeSkywalkerEnemy").css("display") == "none") { 
+            $("#darthMaulEnemy").animate({"right":"197%"}, "slow");
+
+        // $("#lukeSkywalkerEnemy").animate({"right":"95%"}, "slow");
+    } //close of Darth Sidious enemy functions
+  });
+
+
+
+
 
 
 
