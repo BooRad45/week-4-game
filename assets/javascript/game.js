@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+///////////GLOBAL VARIABLES FOR POWERS ////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+    var obiwangood; 
+    var obiwanenemy;
+    var lukeskywalkergood;
+    var lukeskywalkerenemy;
+    var darthsidiousgood;
+    var darthsidiousenemy;
+    var darthmaulgood;
+    var darthmaulenemy;
+
 
 //YOUR CHARACTER functions (Need functions for situations where main character is chosen)
 
@@ -10,7 +22,7 @@ $(document).ready(function(){
         $("#obiWanEnemy").css({"display": "none"});//hide main character in enemy section
         $("#enemiesAvailable").css({ "visibility": "visible", "margin-left": "-10%"});//make unpicked characters visible in enemy section
         $("#lukeSkywalkerEnemy, #darthSidiousEnemy, #darthMaulEnemy").css({"border":"red 10px solid"}); //place red border around enemy characters     
-
+        $("#obiWan").data('clicked', true);
    }); // close of Obi-Wan main character functions
 
    // CHARACTER #2 = LUKE SKYWALKER --- main character functions
@@ -22,7 +34,7 @@ $(document).ready(function(){
         $("#darthSidiousEnemy").animate({"right":"170px"}, "slow");
         $("#darthMaulEnemy").animate({"right":"175px"}, "slow");
         $('#lukeSkywalker').on('click change', function() {
-        $(this).data('clicked', true);
+        $("#lukeSkywalker").data('clicked', true);
 });
 
    }); // close of Luke Skywalker main character functions
@@ -36,6 +48,7 @@ $(document).ready(function(){
         $("#darthMaulEnemy").animate({"right":"175px"}, "slow");
         $("#lukeSkywalkerEnemy").animate({"right":"6px"}, "slow");
         $("#darthSidious").animate({"right":"166px"}, "slow");
+        // $("#lukeSkywalker").data('clicked', true);
    }); // close of Darth Sidious main character functions
   
 
@@ -48,6 +61,8 @@ $(document).ready(function(){
         $("#lukeSkywalkerEnemy").animate({"right":"4px"}, "slow");
         $("#darthSidiousEnemy").animate({"right":"7px"}, "slow");
         $("#darthMaul").animate({"right":"321px"}, "slow");
+        // $("#lukeSkywalker").data('clicked', true);
+
    }); // close of Darth Maul main character functions
 
     ////////////////////////////////////////////////////////////////////////////////////////
@@ -121,8 +136,22 @@ $(document).ready(function(){
         }         
  
 
-    }); //close of Luke enemy functions
+    }); //close of Darth Sidious enemy functions
 
-  }); //document.ready function close
+//////////////////////////////////////////////////////////////////////////////////////////////
+//////ATTACK BUTTON ACTIONS /////////////////////////////////////////////////////////////////
+///// OBI-WAN YOUR CHARACTER ///////////////////////////////
+    $("#attack").click(function(){
+        if ($("#obiWan").data("clicked") === true) {
+            console.log("It's Obi");
+        }
+        else if ($("#lukeSkywalker").data("clicked") === true) {
+            console.log("It's Luke");
+
+    } 
 
 
+  });
+
+
+});//document.ready function close
